@@ -1,0 +1,106 @@
+#page-home {
+    height: 100vh; /*vh -> baseado no espaço em branco vertical da página*/
+    background: url('../icones/home-background.svg') no-repeat; /*Colocando a imagem como background*/
+    background-position: 35vw bottom; /*vw -> baseado no espaço em branco horizontal da página. Bottom -> Junta a margem inferior da imagem ao fim da box*/
+
+}
+    
+#page-home .content {
+    width: 90%; /*Ajusta a largura da caixa baseada na largura da página*/
+    max-width: 1100px; /*Limita a largura da caixa*/
+    margin: 0 auto; /*Deixa os elementos centralizados, sem margem em cima e em baixo*/
+    display: flex;
+    height: 100%; 
+    flex-direction: column; /*Disposição em colunas*/
+}
+
+#page-home header {
+    margin-top: 48px;
+
+    display: flex; /*Disposição de um ao lado do outro*/
+    align-items: center; /*Alinhar elementos ao centro do eixo y */
+    justify-content: space-between; /*Um em cada canto de uma caixa */
+}
+
+#page-home header a{
+    display: flex;
+
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+#page-home header a span {
+
+    margin-right: 16px;
+    display: flex;
+
+    background-image: url('../icones/log-in.svg');
+    
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main {
+    max-width: 560px;
+    flex: 1; /*A box preenche todo o espaço em branco da página*/
+    display: flex;
+    flex-direction: column; /*Disposição em colunas*/
+    justify-content: center; /*Centralizar nax vertical*/
+}
+
+#page-home main h1 {
+    font-size: 54px;
+}
+
+#page-home main p{
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+    font-weight: bold;
+}
+
+#page-home main a{
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    border-radius: 8px 25px; /*Arredondamento das bordas*/
+    background-color: var(--primary-color);
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+
+    transition: 400ms; /*Tempo de transição ao colocar o mouse em cima*/
+
+    font-weight: bold;
+    color: white;
+}
+
+#page-home main a:hover{ /*Quando o mouse estiver em cima do box*/
+    background-color: #2fb86e;
+}
+
+#page-home main a span{
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0.08); /*alpha -> transparência*/
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 25px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home main a span::after{ /*Criação de um pseudo-elemento*/
+    content: "";
+    background-image: url("../icones/search.svg");
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main a strong{
+    flex: 1;
+    text-align: center;
+}
