@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/responsive.css">
     <link rel="stylesheet" href="/styles/create-point.css">
-
-
-
 </head>
+
 <body>
 
     <div id="page-create-point"> 
@@ -38,19 +36,19 @@
 
                     <div class="field">
                         <label for="name">Nome da entidade</label> <!--Título do campo-->
-                        <input type="text" name = "name"> <!--Caixa de resposta-->
+                        <input type="text" name = "name" required> <!--Caixa de resposta-->
                     </div>
 
                     <div class="field-group"> <!--.field*2 cria 2 campos iguais-->
 
                         <div class="field">
                             <label for="address">Endereço</label> <!--label+input cria um label e um input ao mesmo tempo-->
-                            <input type="text" name = "address">
+                            <input type="text" name = "address" required>
                         </div>
 
                         <div class="field">
                             <label for="number">Número/Complemento</label>
-                            <input type="text" name = "number">
+                            <input type="text" name = "number" required>
                         </div>
 
                     </div>
@@ -59,7 +57,7 @@
                     
                         <div class="field">
                             <label for="state">Estado</label>
-                            <select name="uf">
+                            <select name="uf" required>
                                 <option value="">Selecione o Estado</option>
                             </select>
 
@@ -69,7 +67,7 @@
 
                         <div class="field">
                             <label for="city">Estado</label>
-                            <select name="city" disabled>
+                            <select name="city" disabled required>
                                 <option value="">Selecione a Cidade</option>
                             </select>
                         </div>
@@ -80,8 +78,43 @@
 
                 <fieldset>
                     <legend>
-                        <h2>Itens a coletar</h2>
+                        <h2>Ítens de coleta</h2>
                     </legend>
+
+                    <div class="items-grid">
+                        <li data-id = "1"> <!--Criando o item 1 da lista-->
+                            <img src="/icones/lampadas.svg" alt="Lâmpadas">
+                            <span>Lâmpadas</span>
+                        </li>
+
+                        <li data-id = "2"> 
+                            <img src="/icones/baterias.svg" alt="Pilhas e Baterias">
+                            <span>Pilhas e Baterias</span>
+                        </li>
+
+                        <li data-id = "3"> 
+                            <img src="/icones/papeis-papelao.svg" alt="Papéis e Papelão">
+                            <span>Papéis e Papelão</span>
+                        </li>
+
+                        <li data-id = "4"> 
+                            <img src="/icones/eletronicos.svg" alt="Resíduos eletrônicos">
+                            <span>Resíduos eletrônicos</span>
+                        </li>
+
+                        <li data-id = "5"> 
+                            <img src="/icones/organicos.svg" alt="Resíduos orgânicos">
+                            <span>Resíduos orgânicos</span>
+                        </li>
+
+                        <li data-id = "6"> 
+                            <img src="/icones/oleo.svg" alt="Óleo de Cozinha">
+                            <span>Óleo de Cozinha</span>
+                        </li>
+                    </div>
+
+                    <input type="hidden" name = "items">
+
                 </fieldset>
 
                 <button type = "submit">Cadastrar ponto de coleta</button>
