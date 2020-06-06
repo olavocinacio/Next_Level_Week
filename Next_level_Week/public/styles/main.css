@@ -1,0 +1,42 @@
+:root {
+    --title-color: #402160; /*Definição da variável title-color*/
+    --primary-color: #34cb79;
+}
+
+*{ /*Seleciona todos os seletores*/
+    margin: 0;
+    padding:0; /*zerando os padrões de margem do navegador*/
+    box-sizing: border-box; /*max-width = border*/
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+body{
+    background: #f0f0f5; /* #rrggbb */
+    -webkit-font-smoothing: antialiased; /*Suavização da fonte*/
+}
+
+a{
+    text-decoration: none; /*Tira o sublinhado de todos os elementos <a> do projeto */
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}
+
+/*  BOX MODEL -> Todos os elementos recebem formato de caixa   
+Toda caixa tem largura, altura, espaçamento, preenchimento, borda, cor, fundo, display,
+posicionamento, alinhamento. 
+Tipos de caixa: 
+    Block -> Ocupa a linha inteira
+    Inline -> Ocupa o espaço do elemento    */
+    
+
+/* .red {
+    color: red; -> Atribui cor ao texto
+    background: black; -> Atribui cor ao fundo
+} */
