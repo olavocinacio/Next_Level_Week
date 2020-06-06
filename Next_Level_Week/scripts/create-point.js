@@ -82,16 +82,15 @@ function handle_selected_item(event){
 
     //se já estiver selecionado
     if(already_selected >= 0){ //Se o item não estiver na lista, recebe -1. Se o item estiver na lista
-        const filtered_items = selected_items.filter(item => {
-            const item_is_different = item != item_id 
+        let filtered_items = selected_items.filter(item => {
+            let item_is_different = item != item_id 
             return item_is_different
         })//Se o item já estiver selecionado, vai ser retirado do filtered_items
-        selectedItems = filtered_items
+        selected_items = filtered_items
     }
     else{ //Se não estiver selecionado
         selected_items.push(item_id) //adciona o item ao selected_items
     }
 
-    //collected_items.value = selected_items
-    console.log(selected_items)
+    collected_items.value = selected_items
 }

@@ -152,5 +152,5 @@ form button:hover{ /*Quando o mouse estiver em cima do box*/
 }
 
 .items-grid li img, .items-grid li span{
-    pointer-events: none; /*Desativa a opção de clicar na imagem ou no texto. Quando isso acontecer, o box inteiro (li -> box pai) é selecionado*/
+    pointer-events: none; /*Desativa a opção de clicar na imagem ou no texto. Quando isso acontecer, o box inteiro (li -> box pai) é selecionado
 }

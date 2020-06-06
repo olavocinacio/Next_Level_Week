@@ -16,6 +16,10 @@
     #page-home main{
         align-items: center;
     }
+
+    #page-search .cards{
+        grid-template-columns: 1fr;
+    }
 }
 /*Conjunto de regras de coisas que podem ser configuradas(if do css)*/
 
