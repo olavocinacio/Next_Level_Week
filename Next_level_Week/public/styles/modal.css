@@ -77,3 +77,18 @@
     background-color: #2fb85e;
     cursor: pointer;
 }
+
+#modal.point .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}/*Ajusta o modal do point_created.html*/
+
+#modal.point h1{
+    color: white;
+    margin-top: 32px;
+}
+
+#modal.error h1{
+    color: red;
+}

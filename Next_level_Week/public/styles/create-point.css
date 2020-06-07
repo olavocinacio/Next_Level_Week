@@ -51,10 +51,19 @@ form fieldset{
 
 form legend{
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-form legend h1{
+form legend h2{
     font-size: 24px;
+}
+
+form legend span{
+    font-size: 14px;
+    color: var(--title-color);
 }
 
 form .field{
@@ -152,5 +161,5 @@ form button:hover{ /*Quando o mouse estiver em cima do box*/
 }
 
 .items-grid li img, .items-grid li span{
-    pointer-events: none; /*Desativa a opção de clicar na imagem ou no texto. Quando isso acontecer, o box inteiro (li -> box pai) é selecionado
+    pointer-events: none; /*Desativa a opção de clicar na imagem ou no texto. Quando isso acontecer, o box inteiro (li -> box pai) é selecionado*/
 }

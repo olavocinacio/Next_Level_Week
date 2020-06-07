@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--Definindo arquivo html-->
+
+<html lang="pt_br">
+    <!--Tag/Elemento html e configuração da linguagem (en/pt_br)-->
+
+    <!-- HTML Hypertext hiper texto -> Links Markup Marcação de texto Language Linguagem de marcação de texto -->
+
+    <head>
+        <meta charset="UTF-8">
+        <!--Utilizado para que funcionem caracteres especiais-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Serve para adaptar o site a vários tamanhos de tela-->
+        <title>Ecoleta</title>
+        <!--Título do site (Nome da guia)-->
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <!--Importando fontes-->
+
+        <link rel="stylesheet" href="/styles/main.css">
+
+        {% block styles %}{% endblock styles %}
+
+        <link rel="stylesheet" href="/styles/responsive.css">
+    </head>
+
+    <body>
+
+        <div id="{{page_id}}">
+            {% block content %}{% endblock content %}
+        </div>
+
+        {% block modal %}{% endblock modal %}
+
+        {% block scripts %}{% endblock scripts %}
+
+    </body>
+
+</html>

@@ -84,11 +84,12 @@ main .card p{
 
 body::after{
     content: "";
-    position: fixed;
+    position: absolute;
     background: white;
-    top: 35%;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    height: 16rem;
     z-index: -1;
 }
